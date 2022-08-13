@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="index.css">
+  <title>Home</title>
+</head>
+
+<body>
+  <div id="navbar">
+    <h5>Beborn</h5>
+  <div class="nav">
+    <li><a href="#home" class="activee">Features</a></li>
+    <li><a href="#news" class="activee">Pricing</a></li>
+    <li><button class="activee button" class="open-button" onclick="openForm()">login</button></li>
+  </div>
+</div>
+
+<script>
+  // Add active class to the current button (highlight it)
+  var header = document.getElementById("navbar");
+  var activee = header.getElementsByClassName("activee");
+  for (var i = 0; i < activee.length; i++) {
+    activee[i].addEventListener("click", function() {
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+    });
+  }
+
+  // ...................form......................
+
+  function openForm() {
+  document.getElementById("myForm").style.display = "block";
+}
+
+function closeForm() {
+  document.getElementById("myForm").style.display = "none";
+}
+  </script>
+
+
+</script>
+
+<div class="contanet">
+  
+  
+    <p class="outercont">
+      Better Marketing Results<br>
+      with Clean Design   </p></h1>
+  <p class="innercont">We have been working very hard to create the new version of our</p><p>courses It comes with a
+     lot of new features. Check it out now!</p>
+
+     <div class="videoprice">
+    <p> <li><a href="#price"  id="id"class="activevideo">play video</a>
+       <img src="video-png-icon-16.png " alt="" class="videoicon" for="id"></li>
+     <li><a href="#video" class="activevideo">see our price</a></li>
+    </p>
+  
+</div>
+
+
+
+<!-- ............form.......... -->
+<div class="form-popup" id="myForm">
+  <form action="/action_page.php" class="form-container">
+    <h1>Creat an account</h1>
+
+    <label for="fullname">
+    <input type="text" placeholder="Full name" name="" required>
+    <label for="username">
+    <input type="text" placeholder="User name" name="" required>
+    <label for="email">
+    <input type="text" placeholder=" Email" name="email" required>
+
+    <label for="psw">
+    <input type="password" placeholder=" Password" name="psw" required>
+
+    <button type="submit" class="bton">TRY IT FOR FREE</button>
+    <!-- <button type="button" class="bton cancel" onclick="closeForm()">Close</button> -->
+  </form>
+</div>
+</body>
+
+<div class="footer">
+  <p>Footer</p>
+</div>
+
+</html>

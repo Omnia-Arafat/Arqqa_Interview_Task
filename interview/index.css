@@ -1,0 +1,186 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap'); */
+
+body {
+    background-image: url(13.png);
+    
+    background-repeat: no-repeat;
+    
+    /* background-position: center top; */
+    
+    
+
+    
+}
+
+/* body {
+    background-image: url(13.png);
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: contain;
+    height: 109vh;
+    width: 183vh;
+  } */
+  #navbar {
+    
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: block;
+   
+    
+  }
+  #navbar .nav{
+    float: right;
+    padding-top: 50px;
+    padding-right: 80px;
+  }
+  li{
+    list-style: none;
+    display: inline-block;
+    padding-right: 40px;
+  }
+  li a{
+
+    text-decoration: none;
+    color: #000;
+    font-weight:bolder;
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
+    border-radius: 26px;
+    width: 10em;
+    height: 5ex;
+    border: none;
+    padding: 8px;
+  }
+
+  .active, .activee:hover {
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    border-radius: 25px;
+    margin-right: 20px;    
+  }
+  #navbar h5{
+    padding-left: 50px;
+    padding-top: 10px;
+    float: left;
+    font-weight: bolder;
+font-size:large;
+  }
+  .contanet{
+text-align: center;
+padding-top: 150px;
+padding-left: 600px;
+font-weight: bold;
+text-align: left;
+  }
+  .outercont{
+    width: 600px;
+    text-align: center;
+    font-size: 40px;
+    text-align: left;
+  }
+  .videoicon{
+    width: 20px;
+  }
+  .videoprice {
+    display: inline-block;
+
+  }
+   .activevideo:hover {
+    background-color: #bb9fe5;
+    color: rgb(0, 0, 0);
+    border-radius: 25px;
+    margin-right: 20px;    
+  }
+
+  .button{
+    text-decoration: none;
+    color: #000;
+    font-weight: bolder;
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
+    border-radius: 26px;
+    
+    font-size: 18px;
+    border: none;
+    padding: 8px;
+  }
+
+
+  /* ................form............... */
+  /* The popup form - hidden by default */
+  .open-button{
+    opacity: 0.8;
+    border: none;
+    padding: 6px 25px;
+margin-top: 4px;
+border-radius: 5px;
+word-spacing: 10px;
+  }
+  .form-popup {
+    display: none;
+    position: fixed;
+    bottom: 328px;
+    right: 15px;
+    /* border: 3px solid #f1f1f1; */
+    z-index: 9;
+    left: 198px;
+    width: 360px;
+    height: 300px;
+  }
+
+/* Add styles to the form container */
+.form-container {
+  max-width: 300px;
+  padding: 10px;
+  background-color: white;
+}
+
+/* Full-width input fields */
+.form-container input[type=text], .form-container input[type=password] {
+  width: 89%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+}
+
+/* When the inputs get focus, do something */
+.form-container input[type=text]:focus, .form-container input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Set a style for the submit/login button */
+.form-container .bton {
+  background-color: #a77ee5;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom:10px;
+  opacity: 0.8;
+}
+
+/* Add a red background color to the cancel button */
+.form-container .cancel {
+  background-color: #b592e9;
+}
+
+/* Add some hover effects to buttons */
+.form-container .bton:hover, .open-button:hover {
+  opacity: 1;
+}
+/* end foteer */
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #32451f;
+  color: white;
+  text-align: center;
+  
+  height: 72px;
+ 
+}
